@@ -26,12 +26,14 @@ jobs:
 
   eslint:
     name: Eslint
+    runs-on: ubuntu-latest
     needs: dependencies
     steps:
       - run: npm run eslint
 
   build:
     name: Build
+    runs-on: ubuntu-latest
     needs: dependencies
     steps:
       - run: npm run build
